@@ -21,9 +21,10 @@
           <h1>Emmy Lim</h1>
           <h2>Full-stack Engineer with a focus on UI development and UX design.</h2>
           <div class="contactInfo">
-            <span><i class="fa fa-map-marker"></i>San Francisco, CA</span>
-            <span><i class="fa fa-phone"></i>651-280-7848</span>
-            <span><i class="fa fa-envelope"></i>emmyrlim@gmail.com</span>
+            <a href="https://maps.google.com/?q=San%20Francisco"><i class="fa fa-map-marker"></i>San Francisco, CA</a>
+            <a href="mailto:emmyrlim@gmail.com"><i class="fa fa-envelope"></i>emmyrlim@gmail.com</a>
+            <a href="tel:1-651-280-7848"><i class="fa fa-phone"></i>+1-651-280-7848</a>
+            <a href="http://linkedin.com/in/emmyrlim"><i class="fa fa-linkedin-square"></i>linkedin.com/in/emmyrlim</a>
           </div>
         </header>
         <div class="skills">
@@ -42,13 +43,14 @@
             <li class="moderate">Cordova</li>
             <li class="rare">Python</li>
             <li class="rare">Vue</li>
-            <li class="rare">ReactJ</li>
+            <li class="rare">ReactJS</li>
             <li class="rare">PHP</li>
             <li class="rare">C/C++</li>
           </ul>
         </div>
         <article>
-          <header><h1>Deem</h1><h2>Jul 2013 to Present</h2></header>
+          <h1>Deem</h1>
+          <h2>July 2013 to Present</h2>
           <h3>Senior Software Engineer</h3>
           <p>Primary Front End engineer in multiple projects responsible for building newer and more modern experiences for Deem’s core travel product on the Grails Travel platform and the Deem mobile framework.</p>
           <p>Primary Engineer for the Grails Travel data-modeling Services and Controller API layer.</p>
@@ -56,7 +58,8 @@
           <p><a href="https://www.deem.com/products/travel">https://www.deem.com/products/travel</a></p>
         </article>
         <article>
-          <header><h1>ACM Tagging Grant</h1><h2>Jun 2010 to Dec 2011</h2></header>
+          <h1>ACM Tagging Grant</h1>
+          <h2>June 2010 to December 2011</h2>
           <h3>Research Assistant</h3>
           <p>Developed Front End UI and Controllers to leverage API.</p>
           <p>Both sites became widely used experimental platforms, with Macademia gaining a 2000+ faculty userbase over 300+ academic institutions.</p>
@@ -122,7 +125,7 @@
   }
 
   i {
-    min-width: 1.5em;
+    min-width: 1.1em;
     color: #642441;
   }
 
@@ -151,6 +154,13 @@
     justify-content: space-between;
     align-items: baseline;
     flex-wrap: wrap;
+    margin-top: 0.5em;
+  }
+  .contactInfo a {
+    font-size: 0.9em;
+    margin-right: 0.5em;
+    text-decoration: none;
+    color: #222;
   }
 
   article {
@@ -159,13 +169,14 @@
     padding-top: 1em;
   }
 
-  article header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+  article a {
+    font-size: 0.9em;
+  }
+  article.education a {
+    font-size: 1em;
   }
 
-  article header h1 {
+  article h1 {
     font-size: 1.3em;
   }
 
