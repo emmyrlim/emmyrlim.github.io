@@ -187,32 +187,17 @@
       }).add({
         targets: ".banner h1",
         translateY: "1em",
-        translateX: [-109, window.innerWidth/2-55],
-        easing: [.02,.96,.18,.97],
-        opacity: [0.5, 1],
+        translateX: [-109, window.innerWidth],
+        easing: [0,.96,1,.04],
+        opacity: [0.5, 1, 0.5],
         duration: 2800
       }).add({
         targets: ".banner h2",
-        translateX: [window.innerWidth, window.innerWidth/2-104],
-        easing: [.02,.96,.18,.97],
+        translateX: [window.innerWidth, -208],
+        easing: [0,.96,1,.04],
         duration: 2800,
-        opacity: [0.5, 1],
-        offset: "-=3000"
-      }).add({
-        targets: ".banner h1",
-        translateY: "1em",
-        translateX: [window.innerWidth/2-55, window.innerWidth],
-        easing: [.96,.02,.97,.18],
-        duration: 2800,
-        opacity: [1, 0.5],
-        offset: 3000
-      }).add({
-        targets: ".banner h2",
-        translateX: [window.innerWidth/2-104, -208],
-        easing: [.96,.02,.97,.18],
-        duration: 2800,
-        opacity: [1, 0.5],
-        offset: 3000
+        opacity: [0.5, 1, 0.5],
+        offset: "-=2800"
       }).add({
         targets: [".banner", ".bannerWrapper"],
         duration: 400,
