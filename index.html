@@ -322,7 +322,7 @@
     display: grid;
     grid-template: auto / 50% 50%;
     font-size: 1em;
-    color: var(--theme-gray3);
+    color: var(--theme-gray2);
   }
 
   article.education > div {
@@ -451,6 +451,9 @@
   } 
 
   @media print {
+    .contactInfo {
+      flex-direction: inherit;
+    }
     body {
       max-width: 680px;
       margin: 0;
@@ -460,6 +463,7 @@
 
     i, a {
       color: #000;
+      text-decoration: none;
     }
 
     body > header {
@@ -473,12 +477,12 @@
     .skills ul li{
       color: #222;
       padding: none;
-      background-color: none;
+      background-color: var(--theme-white);
       border: 1px solid #888;
     }
 
-    .skills ul li.rare {
-      opacity: 0.5;
+    .skills ul li.moderate {
+      background-color: var(--theme-white);
     }
 
     aside {
@@ -489,6 +493,21 @@
       font-size:0.8em;
       font-weight:normal;
       color: var(--theme-blue);
+    }
+    main {
+      margin-top: 0;
+    }
+    body {
+      font-size: 14px;
+    }
+    article.education {
+      grid-template: auto / 50% 50%;
+    }
+    article {
+      border-top: 1px solid #222;
+    }
+    p {
+      margin: 1.1em auto;
     }
   }
 
